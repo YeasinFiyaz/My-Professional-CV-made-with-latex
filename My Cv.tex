@@ -1,0 +1,187 @@
+%-------------------------
+% Yeasin Fiyaz - Designed Resume (Full)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+% ----- Page style -----
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\pdfgentounicode=1
+
+% Section format
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% ---- Helpers ----
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & #2 \\
+  \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \small\textbf{#1} & \small #2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\Huge \bfseries Yeasin Fiyaz} \\[-1pt]
+    \small
+    \faMobile\ \href{tel:+8801711283653}{+880 1711 283653} \ $|$ \
+    \faAt\ \href{mailto:yeasinfiyaz@gmail.com}{yeasinfiyaz@gmail.com} \ $|$ \
+    \faLinkedinSquare\ \href{https://www.linkedin.com/in/yeasin-fiyaz-62bb12232/}{linkedin.com/in/yeasin-fiyaz-62bb12232} \ $|$ \
+    \faGithub\ \href{https://github.com/YeasinFiyaz}{github.com/YeasinFiyaz} \ $|$ \
+    \faMapMarker\ Dhaka, Bangladesh
+\end{center}
+
+% ---------- About Me ----------
+\section{About Me}
+Friendly and hardworking individual with strong leadership and communication skills. Passionate about connecting with people, learning continuously, and working collaboratively to achieve shared goals.
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Brac University}{Dhaka, Bangladesh}
+    {B.Sc.\ in Computer Science \& Engineering}{2021 -- 2025}
+  \resumeSubheading
+    {Engineering University School and College}{Dhaka, Bangladesh}
+    {Higher Secondary School Certificate (HSC)}{2020}
+  \resumeSubheading
+    {Engineering University School and College}{Dhaka, Bangladesh}
+    {Secondary School Certificate (SSC)}{2018}
+\resumeSubHeadingListEnd
+
+
+% ---------- FAMILY DETAILS ----------
+\section{Family Details}
+\resumeSubHeadingListStart
+\item \textbf{Father:} Senior Technical Officer, Medical Center, BUET
+\item \textbf{Mother:} Sub Assistant Agricultural Officer (SAAO), Tejgaon Krishi Circle, Dhaka
+\resumeSubHeadingListEnd
+
+
+
+
+% ---------- SKILLS ----------
+\section{Professional Skills}
+\resumeSubHeadingListStart
+\item \textbf{Core:} Python, C/C++, Java, JavaScript
+\item \textbf{AI/ML:} PyTorch, TensorFlow, scikit-learn, OpenCV; model training, data preprocessing, feature engineering
+\item \textbf{Data \& DB:} NumPy, Pandas, Matplotlib; MySQL, MongoDB
+\item \textbf{Web/Backend:} Django, REST APIs; HTML, CSS, Bootstrap
+\item \textbf{Tools:} Git/GitHub, Jupyter, Linux, VS Code
+\resumeSubHeadingListEnd
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {AI-Driven Data Analysis of Post-Covid Implications on Cancer Patients (Thesis — Ongoing)}{}
+  \resumeItemListStart
+    \resumeItem{Developing ML and deep-learning pipelines to classify cancer types by integrating medical imaging and genomic/clinical signals; exploring model explainability to support AI-assisted healthcare.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {COVID-19 Severity Prediction (Research Analysis) \hfill Apr 2025}{}
+  \resumeItemListStart
+    \resumeItem{Analyzed a Random Forest model predicting COVID-19 severity in cancer patients using clinical, radiological, and lab variables; examined feature importance and symptom-linked progression.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Catch the Diamonds! — 2D OpenGL Game \hfill May 2025}{}
+  \resumeItemListStart
+    \resumeItem{Built an interactive 2D game using OpenGL primitives (e.g., \texttt{GL\_POINTS}) and midpoint line algorithm; implemented collision detection, scoring, and smooth real-time rendering.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Travel Booking Website — \textit{Bus Lagbe?} \hfill Dec 2024 -- Jan 2025}{}
+  \resumeItemListStart
+    \resumeItem{Designed a responsive UI and implemented real-time booking flows for buses, launches, flights, hotels, and events; integrated secure payment gateway.}
+    \resumeItem{Stack: Django (backend), HTML/CSS/JS/Bootstrap (frontend), MySQL/MongoDB (DB), external booking \& payment APIs.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- LEADERSHIP & VOLUNTEERING ----------
+\section{Professionalism Area}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {BUCLC — Brac University Communication and Language Club}{Dhaka, Bangladesh}
+    {Vice President}{Mar 2024 -- Mar 2025}
+
+  \resumeSubheading
+    {BRAC University Computer Club}{Dhaka, Bangladesh}
+    {Senior Executive \quad {\small(Tracks: Blog Writing \& Video Editing)}}{Dec 2021 -- Mar 2024}
+
+  \resumeSubheading
+    {Project Srijon (BRAC)}{Dhaka, Bangladesh}
+    {Facilitator}{May 2022 -- Aug 2022}
+
+  \resumeSubheading
+    {EUSCIAN Science \& Technology Club}{Dhaka, Bangladesh}
+    {President}{Jan 2019 -- Dec 2020}
+\resumeSubHeadingListEnd
+
+% ---------- CERTIFICATIONS & ACHIEVEMENTS ----------
+\section{Certifications \& Achievements}
+\resumeSubHeadingListStart
+\item Bangladesh Red Crescent Society — Committee Member, Active Youth and Trained Volunteer
+\item Mission for Humanity Bangladesh — Volunteer Chief, Team Leader, and Trainer
+\item Award Winner — ALOHA Bangladesh
+\item Runners-up — BTV Inter-School Debate Championship
+\item Award Winner — Bangladesh-Japan Friendship Art Championship
+\item Award Winner — Bangladesh Red Crescent Society Art Championship
+\item Runner's Up — Hult Prize 
+\item Volunteer — BD CLEAN
+\item Champion - Plan for sustainable and Future Dhaka project
+\item President of Administration and Organizer — 12th EUSCIAN Science and Technology Fair 2019
+\item Volunteer in Charge — Fresher’s Orientation Summer 2024, Brac University
+\item Organizer — Cultural Exchange 2023, Brac University
+\item Organizer — Speak Bold (2024), Brac University
+\item Organizer Committee — Speakathon (2024), Brac University
+\resumeSubHeadingListEnd
+
+
+
+% ---------- HOBBIES ----------
+\section{Hobbies \& Interests}
+Video Gaming; Aerospace Engineering
+
+\end{document}
